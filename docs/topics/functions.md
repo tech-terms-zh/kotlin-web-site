@@ -2,13 +2,16 @@
 
 Functions in Kotlin are declared using the `fun` keyword:
 
+Kotlin 裡面的函式（Function）以 `fun` 關鍵字宣告：
+
+
 ```kotlin
 fun double(x: Int): Int {
     return 2 * x
 }
 ```
 
-## Function usage
+## 函式的用法
 
 Calling functions uses the traditional approach:
 
@@ -22,7 +25,7 @@ Calling member functions uses the dot notation:
 Stream().read() // create instance of class Stream and call read()
 ```
 
-### Parameters
+### 參數（Parameter）
 
 Function parameters are defined using Pascal notation - *name*: *type*. Parameters are separated using commas. Each 
 parameter must be explicitly typed:
@@ -40,7 +43,7 @@ fun powerOf(
 ) { /*...*/ }
 ```
 
-### Default arguments
+### 預設引數（Argument）
 
 Function parameters can have default values, which are used when you skip the corresponding argument. This reduces a number 
 of overloads compared to other languages:
@@ -95,7 +98,7 @@ foo(qux = { println("hello") }) // Uses both default values bar = 0 and baz = 1
 foo { println("hello") }        // Uses both default values bar = 0 and baz = 1
 ```
 
-### Named arguments
+### 命名引數
 
 When calling a function, you can name one or more of its arguments. This may be helpful when a function has a large number of arguments, 
 and it's difficult to associate a value with an argument, especially if it's a boolean or `null` value.
@@ -153,7 +156,7 @@ foo(strings = *arrayOf("a", "b", "c"))
 >
 {type="note"}
 
-### Unit-returning functions
+### 回傳 Unit 的函式
 
 If a function does not return any useful value, its return type is `Unit`. `Unit` is a type with only one value - `Unit`. 
 This value does not have to be returned explicitly:
@@ -174,7 +177,7 @@ The `Unit` return type declaration is also optional. The above code is equivalen
 fun printHello(name: String?) { ... }
 ```
 
-### Single-expression functions
+### 單一敘述的函式
 
 When a function returns a single expression, the curly braces can be omitted and the body is specified after a `=` symbol:
 
@@ -230,7 +233,7 @@ val a = arrayOf(1, 2, 3)
 val list = asList(-1, 0, *a, 4)
 ```
 
-### Infix notation
+### 內綴（Infix） notation
 
 Functions marked with the `infix` keyword can also be called using the infix notation (omitting the dot and the parentheses 
 for the call). Infix functions must meet the following requirements:
@@ -332,7 +335,7 @@ Sample().foo() // creates instance of class Sample and calls foo
 
 For more information on classes and overriding members see [Classes](classes.md) and [Inheritance](classes.md#inheritance).
 
-## Generic functions
+## 泛型（Generic）函式
 
 Functions can have generic parameters which are specified using angle brackets before the function name:
 
@@ -342,7 +345,7 @@ fun <T> singletonList(item: T): List<T> { /*...*/ }
 
 For more information on generic functions, see [Generics](generics.md).
 
-## Tail recursive functions
+## 尾遞迴（Tail Recursive）函式
 
 Kotlin supports a style of functional programming known as [tail recursion](https://en.wikipedia.org/wiki/Tail_call).
 For some algorithms that would normally use loops you can use a recursive function instead without a risk of stack overflow.
@@ -377,7 +380,7 @@ To be eligible for the `tailrec` modifier, a function must call itself as the la
 tail recursion when there is more code after the recursive call, and you cannot use it within `try`/`catch`/`finally` blocks. 
 Currently, tail recursion is supported by Kotlin for JVM and Kotlin/Native.
 
-**See also**:
+**相關頁面**:
 * [Inline functions](inline-functions.md)
 * [Extension functions](extensions.md)
 * [Higher-order functions and lambdas](lambdas.md)
