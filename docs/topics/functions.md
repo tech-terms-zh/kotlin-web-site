@@ -13,13 +13,13 @@ fun double(x: Int): Int {
 
 ## 函式的用法
 
-Calling functions uses the traditional approach:
+用傳統的方式呼叫函式：
 
 ```kotlin
 val result = double(2)
 ```
 
-Calling member functions uses the dot notation:
+用 dot notation 呼叫成員函式（Member Function）
 
 ```kotlin
 Stream().read() // create instance of class Stream and call read()
@@ -56,7 +56,7 @@ fun read(
 ) { /*...*/ }
 ```
 
-A default value is defined using the `=` after the type.
+在型別之後加上 `=` 來設定預設值。
 
 Overriding methods always use the same default parameter values as the base method.
 When overriding a method with default parameter values, the default parameter values must be omitted from the signature:
@@ -72,7 +72,7 @@ class B : A() {
 ```
 
 If a default parameter precedes a parameter with no default value, the default value can only be used by calling 
-the function with [named arguments](#named-arguments):
+the function with [命名引數](#named-arguments):
 
 ```kotlin
 fun foo(
