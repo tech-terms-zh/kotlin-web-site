@@ -42,7 +42,7 @@ fun powerOf(
 
 ### 預設引數（Argument）
 
-函式的參數可以有預設值，在你呼叫函式但是沒有給予對應值時會使用預設值做輸入。 This reduces a number of overloads compared to other languages:
+函式的參數可以有預設值，在你呼叫函式但是沒有給予對應值時，會使用預設值做輸入。和其他的語言相比，這減少了需要多載（Overload）的項目：
 
 ```kotlin
 fun read(
@@ -54,8 +54,8 @@ fun read(
 
 在型別之後加上 `=` 來設定預設值。
 
-Overriding methods always use the same default parameter values as the base method.
-When overriding a method with default parameter values, the default parameter values must be omitted from the signature:
+要對方法（Method）進行覆寫（Override）時，最好的方式是總是使用相同的預設值。
+在 Kotlin 覆寫方法時，如果原本的方法有預射值，覆寫時必須要省略：
 
 ```kotlin
 open class A {
@@ -63,7 +63,7 @@ open class A {
 }
 
 class B : A() {
-    override fun foo(i: Int) { /*...*/ }  // No default value is allowed.
+    override fun foo(i: Int) { /*...*/ }  // 不允許加上預設值
 }
 ```
 
