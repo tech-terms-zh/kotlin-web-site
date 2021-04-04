@@ -27,14 +27,13 @@ Stream().read() // create instance of class Stream and call read()
 
 ### 參數（Parameter）
 
-Function parameters are defined using Pascal notation - *name*: *type*. Parameters are separated using commas. Each 
-parameter must be explicitly typed:
+函式的參數使用帕斯卡（Pascal）標記方式來宣告：*名稱*: *型別*。參數之間使用逗號分隔。每個參數都必須加上型別：
 
 ```kotlin
 fun powerOf(number: Int, exponent: Int): Int { /*...*/ }
 ```
 
-You can use a [trailing comma](coding-conventions.md#trailing-commas) when you declare function parameters:
+定義參數時可以加上尾逗號（Trailing Comma）：
 
 ```kotlin
 fun powerOf(
