@@ -99,7 +99,7 @@ foo { println("hello") }        // Uses both default values bar = 0 and baz = 1
 
 ### 命名引數
 
-When calling a function, you can name one or more of its arguments. This may be helpful when a function has a large number of arguments, 
+呼叫函式時，you can name one or more of its arguments. This may be helpful when a function has a large number of arguments, 
 and it's difficult to associate a value with an argument, especially if it's a boolean or `null` value.
 
 When you use named arguments in a function call, you can freely change the order they are listed in, and if you want to 
