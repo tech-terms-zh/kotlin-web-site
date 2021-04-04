@@ -1,8 +1,6 @@
 [//]: # (title: Functions)
 
-Functions in Kotlin are declared using the `fun` keyword:
-
-Kotlin 裡面的函式（Function）以 `fun` 關鍵字宣告：
+otlin 裡面的函式（Function）以 `fun` 關鍵字宣告：
 
 
 ```kotlin
