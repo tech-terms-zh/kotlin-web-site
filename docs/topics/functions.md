@@ -19,7 +19,7 @@ fun double(x: Int): Int {
 val result = double(2)
 ```
 
-用 dot notation 呼叫成員函式（Member Function）
+用點號表示（dot notation）呼叫成員函式（Member Function）
 
 ```kotlin
 Stream().read() // create instance of class Stream and call read()
@@ -44,8 +44,7 @@ fun powerOf(
 
 ### 預設引數（Argument）
 
-Function parameters can have default values, which are used when you skip the corresponding argument. This reduces a number 
-of overloads compared to other languages:
+函式的參數可以有預設值，在你呼叫函式但是沒有給予對應值時會使用預設值做輸入。 This reduces a number of overloads compared to other languages:
 
 ```kotlin
 fun read(
