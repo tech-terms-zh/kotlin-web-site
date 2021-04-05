@@ -79,8 +79,7 @@ fun foo(
 foo(baz = 1) // The default value bar = 0 is used
 ```
 
-If the last argument after default parameters is a [lambda](lambdas.md#lambda-expression-syntax), you can pass it 
-either as a named argument or [outside the parentheses](lambdas.md#passing-trailing-lambdas):
+如果函式的最後一個引數是 [lambda](lambdas.md#lambda-expression-syntax) 函式，你可以用命名引數的方式傳入，也可以在[小括弧外面傳入](lambdas.md#passing-trailing-lambdas)：
 
 ```kotlin
 fun foo(
