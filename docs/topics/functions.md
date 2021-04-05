@@ -313,9 +313,9 @@ fun dfs(graph: Graph) {
 }
 ```
 
-### Member functions
+### 成員函式（Member Function）
 
-A member function is a function that is defined inside a class or object:
+成員函式是類別或物件裡面宣告的函式：
 
 ```kotlin
 class Sample {
@@ -323,13 +323,13 @@ class Sample {
 }
 ```
 
-Member functions are called with dot notation:
+成員函式以點號表示（dot notation）的方式呼叫：
 
 ```kotlin
 Sample().foo() // creates instance of class Sample and calls foo
 ```
 
-For more information on classes and overriding members see [Classes](classes.md) and [Inheritance](classes.md#inheritance).
+For more information on classes and overriding members see [類別](classes.md) and [繼承](classes.md#inheritance) 這幾頁教學。
 
 ## 泛型（Generic）函式
 
