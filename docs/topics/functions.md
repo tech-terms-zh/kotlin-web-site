@@ -1,6 +1,6 @@
 [//]: # (title: Functions)
 
-otlin 裡面的函式（Function）以 `fun` 關鍵字宣告：
+Kotlin 裡面的函式（Function）以 `fun` 關鍵字宣告：
 
 
 ```kotlin
@@ -113,7 +113,7 @@ fun reformat(
 ) { /*...*/ }
 ```
 
-When calling this function, you don’t have to name all its arguments:
+呼叫函式時，可以不用每個引數都加上名稱：
 
 ```kotlin
 reformat(
@@ -125,7 +125,7 @@ reformat(
 )
 ```
 
-You can skip all arguments with default values:
+有預設值的所有引數都可以忽略：
 
 ```kotlin
 reformat("This is a long String!")
